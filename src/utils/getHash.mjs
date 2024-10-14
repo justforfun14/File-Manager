@@ -14,7 +14,7 @@ const getHash = async (pathToFile, currentDir) => {
       const rs = createReadStream(tempPath);
       rs.on("data", (chunk) => hash.update(chunk));
       rs.on("end", () => {
-        console.log(`File's hash is ${hash.digest("hex")}`);
+        console.log(hash.digest("hex"));
         res();
       });
 
