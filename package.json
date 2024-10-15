@@ -2,9 +2,13 @@
   "name": "file-manager",
   "version": "1.0.0",
   "description": "File manager",
+  "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./src/index.js "
   },
   "repository": {
     "type": "git",
